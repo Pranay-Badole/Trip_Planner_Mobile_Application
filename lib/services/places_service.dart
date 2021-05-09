@@ -4,7 +4,6 @@ import 'dart:convert' as convert;
 import 'package:trip_plan_app/configMaps.dart';
 
 class PlacesService {
-  final key = "your_Api_Key";
   static String place = 'atm';
   Future<List<Place>> getPlaces(double lat, double lng) async {
     var response = await http.get(Uri.parse(
